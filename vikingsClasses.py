@@ -54,23 +54,41 @@ class Saxon(Soldier):
 
 # class War():
 #     def __init__(self):
-#         # your code here
+#         self.vikingArmy = []
+#         self.saxonArmy = []
 
 #     def addViking(self, viking):
-#         # your code here
+#         self.vikingArmy.append(viking)
     
 #     def addSaxon(self, saxon):
-#         # your code here
+#         self.saxonArmy.append(saxon)
     
 #     def vikingAttack(self):
-#         # your code here
-    
+#         result = random.choice(self.saxonArmy).receiveDamage(random.choice(self.vikingArmy).strength)
+#     for saxon in self.saxonArmy:
+#         if saxon.health <= 0:
+#             self.saxonArmy.remove(saxon)
+#     return result
+
 #     def saxonAttack(self):
-#         # your code here
+#         result2 = random.choice(self.vikingArmy).receiveDamage(random.choice(self.saxonArmy).strength)
+#     for viking in self.vikingArmy:
+#         if viking.health <= 0:
+#             self.vikingArmy.remove(viking)
+#     return result
 
 #     def showStatus(self):
-#         # your code here
-#     pass
+#         if not self.saxonArmy:
+#             return "Vikings have won the war of the century!"
+        
+#         #if the Viking array is empty, should return "Saxons have fought for their lives and survive another day..."
+#         if not self.vikingArmy:
+#             return "Saxons have fought for their lives and survive another day..."
+        
+#         #if there are at least 1 Viking and 1 Saxon, should return "Vikings and Saxons are still in the thick of battle."
+#         if self.saxonArmy and self.vikingArmy:
+#             return "Vikings and Saxons are still in the thick of battle."
+    #pass
 
 # #yop
 # class War2:
